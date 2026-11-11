@@ -1,0 +1,278 @@
+<title>Canil Ouro Manso</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=Source+Sans+3:wght@400;600&display=swap">
+<link rel="stylesheet" href="styles.css">
+<script src="scripts.js" defer></script>
+
+<div class="notice">Site de exemplo para avaliação de estrutura. Nomes, textos, números e fotos são fictícios.</div>
+
+<div class="wrap">
+  <div class="social"><span>Instagram</span><span>YouTube</span><span>TikTok</span></div>
+
+  <header class="top">
+    <a class="brand" href="#home"><span class="logo"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#paw"/></svg></span>Canil Ouro Manso</a>
+    <button class="burger" id="burger" aria-expanded="false" aria-controls="menu">Menu</button>
+    <nav id="menu" aria-label="Principal">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#filhotes">Filhotes</a></li>
+        <li><a href="#ninhadas">Ninhadas</a></li>
+        <li><a href="#caes">Nossos Cães</a></li>
+        <li><a href="#galeria">Galeria</a></li>
+        <li><a href="#blog">Blog</a></li>
+        <li><a href="#contato">Contato</a></li>
+        <li><a class="btn gold small" href="#reserva">Questionário</a></li>
+      </ul>
+    </nav>
+  </header>
+</div>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><symbol id="paw" viewBox="0 0 24 24"><ellipse cx="6" cy="10" rx="2.2" ry="3"/><ellipse cx="10.5" cy="5.5" rx="2.2" ry="3"/><ellipse cx="16.5" cy="5.5" rx="2.2" ry="3"/><ellipse cx="21" cy="10" rx="2.2" ry="3"/><path d="M12 11c-3.6 0-6.5 3.2-6.5 6 0 2 1.6 3 3.4 3 1.2 0 2-.5 3.1-.5s1.9.5 3.1.5c1.8 0 3.4-1 3.4-3 0-2.8-2.9-6-6.5-6z"/></symbol></svg>
+
+<main>
+
+<!-- ============ HOME ============ -->
+<div data-view="home">
+  <div class="wrap">
+    <div class="cover" aria-label="Fotos do canil" id="cover"></div>
+
+    <section class="intro">
+      <div>
+        <p class="eyebrow">Golden Retriever desde 2014</p>
+        <h1>Criação responsável de Golden Retriever na Serra da Mantiqueira</h1>
+        <p class="lead" style="margin-top:16px">Somos uma criação familiar e trabalhamos com uma única raça. Cada ninhada nasce em casa, com acompanhamento veterinário, exames dos pais e contato diário com as famílias. Aqui entra a história do canil, contada em primeira pessoa: como começou, quem cuida dos cães e o que a família que escolhe um filhote pode esperar.</p>
+        <p style="margin-top:20px"><a class="btn gold" href="#filhotes">Ver filhotes disponíveis</a></p>
+      </div>
+      <div class="facts">
+        <div class="fact"><b>12+</b><span>anos de criação</span></div>
+        <div class="fact"><b>800</b><span>famílias atendidas</span></div>
+        <div class="fact"><b>15</b><span>exames por filhote</span></div>
+        <div class="fact"><b>1</b><span>raça, só Golden</span></div>
+      </div>
+    </section>
+
+    <section style="padding-top:8px">
+      <p class="eyebrow">Disponíveis agora</p>
+      <h2 style="margin-bottom:24px">Filhotes</h2>
+      <div class="grid" id="homePups"></div>
+      <a class="more" href="#filhotes">Ver todos os filhotes e filtrar →</a>
+    </section>
+
+    <section style="padding-top:8px">
+      <p class="eyebrow">Quem são os pais</p>
+      <h2 style="margin-bottom:24px">Ninhadas</h2>
+      <div class="litters" id="homeLitters"></div>
+      <a class="more" href="#ninhadas">Ver próximas e passadas →</a>
+    </section>
+  </div>
+
+  <div class="deep"><div class="wrap">
+    <section>
+      <p class="eyebrow">Diferenciais</p>
+      <h2>O que existe por trás de cada filhote</h2>
+      <p class="lead" style="margin-top:12px">Três pilares que o canil mostra com documentos e não só com promessa.</p>
+      <div class="diffs">
+        <div class="diff"><h3>Genética acompanhada</h3><p>Testes de doenças hereditárias, coeficiente de endogamia e acompanhamento de um geneticista antes de cada cruzamento.</p><a href="#">Ler sobre aconselhamento genético</a></div>
+        <div class="diff"><h3>Saúde investigada</h3><p>Exames e avaliações documentados antes da entrega: coração, olhos, articulações e laudos dos pais.</p><a href="#">Ver lista de exames</a></div>
+        <div class="diff"><h3>Avaliação nas pistas</h3><p>Os cães participam de exposições e são avaliados por árbitros nacionais e internacionais.</p><a href="#">Ver conquistas</a></div>
+      </div>
+    </section>
+  </div></div>
+
+  <div class="wrap">
+    <section>
+      <p class="eyebrow">Famílias</p>
+      <h2 style="margin-bottom:24px">Depoimentos</h2>
+      <div class="quotes" id="quotes"></div>
+      <a class="btn" href="#">Envie um depoimento</a>
+    </section>
+
+    <section style="padding-top:8px">
+      <p class="eyebrow">Novidades</p>
+      <h2 style="margin-bottom:24px">Do blog</h2>
+      <div class="posts" id="homePosts"></div>
+      <a class="more" href="#blog">Ver todos os artigos →</a>
+    </section>
+
+    <section style="padding-top:8px">
+      <div class="cta-band">
+        <div><h3>Pronto para conhecer um filhote?</h3><p class="lead" style="margin:6px 0 0">Responda o questionário ou fale direto com o criador.</p></div>
+        <div style="display:flex;gap:10px;flex-wrap:wrap"><a class="btn gold" href="#reserva">Questionário</a><a class="btn" href="#contato">Contato</a></div>
+      </div>
+    </section>
+  </div>
+</div>
+
+<!-- ============ FILHOTES ============ -->
+<div data-view="filhotes" hidden>
+  <div class="wrap">
+    <div class="page-head">
+      <p class="eyebrow">Disponíveis agora</p>
+      <h1>Filhotes</h1>
+      <p class="lead">Todos os filhotes que estão à venda neste momento. Use o filtro para ver só machos ou só fêmeas.</p>
+    </div>
+    <div class="bar">
+      <div class="filters" role="group" aria-label="Filtrar por sexo" id="pupFilters">
+        <button data-f="all" aria-pressed="true">Todos</button>
+        <button data-f="Macho" aria-pressed="false">Machos</button>
+        <button data-f="Fêmea" aria-pressed="false">Fêmeas</button>
+      </div>
+      <span class="count" id="pupCount"></span>
+    </div>
+    <div class="grid" id="pups"></div>
+  </div>
+</div>
+
+<!-- ============ NINHADAS ============ -->
+<div data-view="ninhadas" hidden>
+  <div class="wrap">
+    <div class="page-head">
+      <p class="eyebrow">Quem são os pais</p>
+      <h1>Ninhadas</h1>
+      <p class="lead">Ninhadas atuais, as que estão previstas e o histórico das que já foram encerradas.</p>
+    </div>
+    <div class="bar">
+      <div class="tabs" role="tablist" aria-label="Ninhadas" id="litterTabs">
+        <button role="tab" data-k="now" aria-selected="true">Atuais</button>
+        <button role="tab" data-k="next" aria-selected="false">Próximas ninhadas</button>
+        <button role="tab" data-k="past" aria-selected="false">Ninhadas passadas</button>
+      </div>
+    </div>
+    <div class="litters" id="litters"></div>
+  </div>
+</div>
+
+<!-- ============ NOSSOS CÃES ============ -->
+<div data-view="caes" hidden>
+  <div class="wrap">
+    <div class="page-head">
+      <p class="eyebrow">Quem faz parte da família</p>
+      <h1>Nossos cães</h1>
+      <p class="lead">Os reprodutores em atividade, os que já se aposentaram e os que nos deixaram saudade.</p>
+    </div>
+    <div class="bar">
+      <div class="tabs" role="tablist" aria-label="Nossos cães" id="dogTabs">
+        <button role="tab" data-k="now" aria-selected="true">Reprodutores</button>
+        <button role="tab" data-k="retired" aria-selected="false">Aposentados</button>
+        <button role="tab" data-k="memory" aria-selected="false">Saudade</button>
+      </div>
+    </div>
+    <div class="grid" id="dogs"></div>
+  </div>
+</div>
+
+<!-- ============ GALERIA ============ -->
+<div data-view="galeria" hidden>
+  <div class="wrap">
+    <div class="page-head">
+      <p class="eyebrow">Galeria</p>
+      <h1>Fotos e vídeos</h1>
+      <p class="lead">Escolha um álbum para ver só aquela categoria.</p>
+    </div>
+    <div class="bar">
+      <div class="filters" role="group" aria-label="Álbuns" id="albumFilters"></div>
+      <span class="count" id="photoCount"></span>
+    </div>
+    <div class="photos" id="photos"></div>
+  </div>
+</div>
+
+<!-- ============ BLOG ============ -->
+<div data-view="blog" hidden>
+  <div class="wrap">
+    <div class="page-head">
+      <p class="eyebrow">Novidades</p>
+      <h1>Blog</h1>
+      <p class="lead">Artigos sobre criação, saúde e rotina com o Golden Retriever.</p>
+    </div>
+    <div class="bar">
+      <div class="filters" role="group" aria-label="Categorias" id="catFilters">
+        <button data-f="all" aria-pressed="true">Todos</button>
+        <button data-f="Criação" aria-pressed="false">Criação</button>
+        <button data-f="Dicas diversas" aria-pressed="false">Dicas diversas</button>
+        <button data-f="Geral" aria-pressed="false">Geral</button>
+      </div>
+      <span class="count" id="postCount"></span>
+    </div>
+    <div class="posts" id="posts"></div>
+
+    <section>
+      <p class="eyebrow">Antes de decidir</p>
+      <h2>Conteúdos para escolher seu Golden com segurança</h2>
+      <div class="topics" style="margin-top:24px">
+        <div class="topic"><h3>Escolhendo seu Golden</h3><ul>
+          <li><a href="#">O Golden é a raça certa para mim?</a></li>
+          <li><a href="#">Macho ou fêmea?</a></li>
+          <li><a href="#">Quanto custa um Golden Retriever?</a></li></ul></div>
+        <div class="topic"><h3>Criação responsável</h3><ul>
+          <li><a href="#">Como escolher um canil responsável?</a></li>
+          <li><a href="#">Pedigree e vacina bastam?</a></li>
+          <li><a href="#">Perguntas frequentes</a></li></ul></div>
+        <div class="topic"><h3>Saúde e genética</h3><ul>
+          <li><a href="#">Por que exames são só o começo</a></li>
+          <li><a href="#">Displasia: como reduzir riscos</a></li>
+          <li><a href="#">Exposições e criação</a></li></ul></div>
+      </div>
+    </section>
+  </div>
+</div>
+
+<!-- ============ CONTATO ============ -->
+<div data-view="contato" hidden>
+  <div class="wrap">
+    <div class="page-head">
+      <p class="eyebrow">Fale com o criador</p>
+      <h1>Contato</h1>
+    </div>
+    <section style="padding-top:24px">
+      <div class="contact">
+        <div>
+          <p class="lead" style="margin:0 0 20px">Atendimento por WhatsApp. Explique como é a sua casa e qual filhote chamou sua atenção.</p>
+          <a class="btn gold" href="https://wa.me/5500000000000" target="_blank" rel="noopener">Falar no WhatsApp</a>
+        </div>
+        <dl>
+          <dt>WhatsApp</dt><dd>+55 (00) 00000-0000</dd>
+          <dt>E-mail</dt><dd>contato@exemplo.com.br</dd>
+          <dt>Cidade</dt><dd>Serra da Mantiqueira, MG</dd>
+          <dt>CNPJ</dt><dd>00.000.000/0001-00</dd>
+          <dt>Vendas</dt><dd>Processo de venda, reserva e pagamento (página própria)</dd>
+        </dl>
+      </div>
+    </section>
+    <section style="padding-top:8px">
+      <p class="eyebrow">Quem trabalha com a gente</p>
+      <h2 style="margin-bottom:24px">Parceiros</h2>
+      <div class="partners">
+        <div class="partner"><span class="mark">RA</span><h3>Reprodução animal</h3><p>Clínica veterinária que acompanha cio, cobertura e gestação das matrizes.</p><a href="#">Conhecer o parceiro</a></div>
+        <div class="partner"><span class="mark">GC</span><h3>Genética canina</h3><p>Laboratório que faz a análise genética e o aconselhamento antes de cada cruzamento.</p><a href="#">Conhecer o parceiro</a></div>
+        <div class="partner"><span class="mark">DNA</span><h3>Teste de DNA</h3><p>Empresa responsável pelos testes de doenças hereditárias e pela identificação de parentesco.</p><a href="#">Conhecer o parceiro</a></div>
+      </div>
+    </section>
+  </div>
+</div>
+
+<!-- ============ QUESTIONÁRIO ============ -->
+<div data-view="reserva" hidden>
+  <div class="wrap">
+    <div class="page-head">
+      <p class="eyebrow">Reserva de filhote</p>
+      <h1>Questionário</h1>
+      <p class="lead">Conte sobre a sua casa e a sua rotina. Assim o canil indica o filhote mais adequado para a sua família.</p>
+    </div>
+    <section style="padding-top:24px">
+      <ul class="steps">
+        <li><b>Sobre você e sua família</b>Quantas pessoas moram na casa, se há crianças e outros animais.</li>
+        <li><b>Sobre a casa</b>Tipo de moradia, espaço para o cão e se há quintal.</li>
+        <li><b>Sobre a rotina</b>Quanto tempo o filhote fica sozinho e quem vai passear com ele.</li>
+        <li><b>Sobre o que você procura</b>Preferência de sexo, cor e momento da retirada.</li>
+      </ul>
+      <p style="margin-top:28px"><a class="btn gold" href="#">Responder questionário</a></p>
+    </section>
+  </div>
+</div>
+
+</main>
+
+<div class="wrap">
+  <footer class="site"><span>Canil Ouro Manso, modelo de exemplo</span><span>Home · Filhotes · Ninhadas · Galeria · Blog · Contato</span></footer>
+</div>
